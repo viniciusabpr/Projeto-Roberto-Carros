@@ -1,0 +1,22 @@
+{
+    "name": "tiago/src",
+    "description": "projeto roberto carros",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "tiago salles",
+            "email": "teeisvee@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "../App/",
+            "Src\\": "../Src/",
+            "Controller\\": "../App/Controller/"
+        }
+    }
+}
