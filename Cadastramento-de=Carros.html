@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Carros</title>
+    <link rel="stylesheet" href="./Css/CadastramentodeCarros.css">
+</head>
+<body>
+    <header>
+        <img class="logo" id="logo2" src="./img/logo (2).png" alt="logo">
+        <nav>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Compra.html">Compra</a></li>
+                <li><a href="Ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+        <div class="B">
+            <a href="Login.html"><button class="button">Entrar</button></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <form class="cadastro-form">
+            <h2>Cadastro de Carros</h2>
+            <div class="input-group">
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" placeholder="Digite a marca">
+            </div>
+
+            <div class="input-group">
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Digite o modelo">
+            </div>
+
+            <div class="input-group">
+                <label for="ano">Ano:</label>
+                <input type="number" id="ano" name="ano" placeholder="Digite o ano">
+            </div>
+
+            <div class="input-group">
+                <label for="versao">Versão:</label>
+                <input type="text" id="versao" name="versao" placeholder="Digite a versão">
+            </div>
+
+            <div class="input-group">
+                <label for="blindado">Blindado:</label>
+                <select id="blindado" name="blindado">
+                    <option value="">Selecione</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="quilometragem">Quilometragem:</label>
+                <input type="number" id="quilometragem" name="quilometragem" placeholder="Digite a quilometragem">
+            </div>
+
+            <div class="input-group">
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" name="preco" placeholder="Digite o preço">
+            </div>
+
+            <div class="input-group">
+                <label for="imagem">Imagem:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" onchange="previewImage(event)">
+            </div>
+            <div class="preview-image">
+                <img id="preview" src="#" alt="Preview da Imagem" style="display: none;">
+            </div>
+
+            <div id="container-register">
+            <button class="register" type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function() {
+                var preview = document.getElementById('preview');
+                preview.src = reader.result;
+                preview.style.display = 'block';
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+</body>
+</html>

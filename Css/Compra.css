@@ -30,6 +30,13 @@ header {
     height: 35px;
 }
 
+#logo2{
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    
+}
+
 .links a {
     list-style: none;
     text-decoration: none;
