@@ -1,92 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Carros</title>
+    <title>Trabalho final</title>
     <link rel="stylesheet" href="./Css/CadastramentodeCarros.css">
 </head>
 
 <body>
     <header>
+
         <img class="logo" id="logo2" src="./img/logo (2).png" alt="logo">
+
         <nav>
+            <!-- Menu de navegação -->
             <ul class="links">
+                <!-- Lista de links -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Compra.html">Compra</a></li>
                 <li><a href="Ajuda.html">Ajuda</a></li>
             </ul>
         </nav>
         <div class="B">
+            <!-- Botão de login -->
             <a href="Login.html"><button class="button">Entrar</button></a>
-        </div>
+
     </header>
 
     <div class="container">
+        <!-- Container principal -->
         <form class="cadastro-form">
+            <!-- Formulário de cadastro de carros -->
             <h2>Cadastro de Carros</h2>
             <div class="input-group">
+                <!-- Grupo de entrada para a marca -->
                 <label for="marca">Marca:</label>
+                <!-- Rótulo para a marca -->
                 <input type="text" id="marca" name="marca" placeholder="Digite a marca">
+                <!-- Campo de entrada para a marca -->
             </div>
 
             <div class="input-group">
+                <!-- Grupo de entrada para o modelo -->
                 <label for="modelo">Modelo:</label>
+                <!-- Rótulo para o modelo -->
                 <input type="text" id="modelo" name="modelo" placeholder="Digite o modelo">
+                <!-- Campo de entrada para o modelo -->
             </div>
 
             <div class="input-group">
+                <!-- Grupo de entrada para o ano -->
                 <label for="ano">Ano:</label>
+                <!-- Rótulo para o ano -->
                 <input type="number" id="ano" name="ano" placeholder="Digite o ano">
+                <!-- Campo de entrada para o ano -->
             </div>
 
             <div class="input-group">
+                <!-- Grupo de entrada para a versão -->
                 <label for="versao">Versão:</label>
+                <!-- Rótulo para a versão -->
                 <input type="text" id="versao" name="versao" placeholder="Digite a versão">
+                <!-- Campo de entrada para a versão -->
             </div>
 
             <div class="input-group">
+                <!-- Grupo de entrada para carro blindado -->
                 <label for="blindado">Blindado:</label>
+                <!-- Rótulo para carro blindado -->
                 <select id="blindado" name="blindado">
+                    <!-- Dropdown de seleção de carro blindado -->
                     <option value="">Selecione</option>
                     <option value="sim">Sim</option>
                     <option value="nao">Não</option>
                 </select>
+                <!-- Opções de seleção para carro blindado -->
             </div>
 
             <div class="input-group">
+                <!-- Grupo de entrada para a quilometragem -->
                 <label for="quilometragem">Quilometragem:</label>
+                <!-- Rótulo para a quilometragem -->
                 <input type="number" id="quilometragem" name="quilometragem" placeholder="Digite a quilometragem">
+                <!-- Campo de entrada para a quilometragem -->
             </div>
 
             <div class="input-group">
+                <!-- Grupo de entrada para o preço -->
                 <label for="preco">Preço:</label>
+                <!-- Rótulo para o preço -->
                 <input type="number" id="preco" name="preco" placeholder="Digite o preço">
+                <!-- Campo de entrada para o preço -->
             </div>
 
             <div class="input-group">
+                <!-- Grupo de entrada para a imagem -->
                 <label for="imagem">Imagem:</label>
+                <!-- Rótulo para a imagem -->
                 <input type="file" id="imagem" name="imagem" accept="image/*" onchange="previewImage(event)">
+                <!-- Campo de seleção de arquivo para a imagem -->
             </div>
+
             <div class="preview-image">
+                <!-- Divisão para a pré-visualização da imagem -->
                 <img id="preview" src="#" alt="Preview da Imagem" style="display: none;">
+                <!-- Elemento de imagem para exibir a pré-visualização -->
             </div>
 
             <div id="container-register">
+                <!-- Container para o botão de cadastro -->
                 <button class="register" type="submit">Cadastrar</button>
+                <!-- Botão para cadastrar o carro -->
             </div>
         </form>
     </div>
-
     <script>
+        // Função para pré-visualização da imagem selecionada
         function previewImage(event) {
+            // Cria uma nova instância do FileReader
             var reader = new FileReader();
+
+            // Define a função que será executada quando o arquivo for carregado
             reader.onload = function () {
+                // Seleciona o elemento de imagem de pré-visualização
                 var preview = document.getElementById('preview');
+                // Define o atributo 'src' da imagem com o resultado da leitura do arquivo
                 preview.src = reader.result;
+                // Exibe a imagem configurando o estilo para 'block'
                 preview.style.display = 'block';
             }
+
+            // Lê o arquivo selecionado como URL de dados
             reader.readAsDataURL(event.target.files[0]);
         }
     </script>

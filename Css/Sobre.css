@@ -213,7 +213,8 @@ button {
     padding-right: 40px;
     font-size: 15px;
     color: var(--color-white);
-    text-align: right;
+    padding-top: 30px;
+    text-align:center;
 
 }
 
@@ -224,9 +225,7 @@ button {
 }
 
 
-
-
-#teste {
+#footer-horizontal-bar{
 
     background-color: var(--color-yelloh-soft);
     height: 80px;
@@ -240,4 +239,103 @@ footer {
     font-size: 50px;
     width: 100vw;
     height: 200px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        background-color: var(--color-yelloh-soft);
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .logo {
+        padding: 10px 0;
+        width: 80px; /* Reduzindo o tamanho da logo */
+    }
+
+    nav {
+        width: 100%; /* Garantir que a navegação ocupe toda a largura */
+        margin: 10px 0; /* Espaçamento entre logo e links de navegação */
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .links li {
+        width: 100%; /* Garantir que os links ocupem toda a largura */
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .B {
+        margin-top: 10px; /* Espaçamento entre links de navegação e botão de login */
+    }
+
+    #title {
+        font-size: 32px;
+        padding: 20px;
+    }
+
+    #container-about-Us,
+    #container-testimonials,
+    #container-team,
+    #container-timeline,
+    #container-cta,
+    #container-contacts {
+        padding: 20px;
+        margin: 20px;
+        width: calc(100% - 40px);
+    }
+
+    #container-about-Us h1,
+    #container-testimonials h2,
+    #container-team h2,
+    #container-timeline h2,
+    #container-cta h2 {
+        font-size: 24px;
+    }
+
+    #container-about-Us p,
+    #container-contacts p {
+        font-size: 16px;
+    }
+
+    .team-member {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .team-member img,
+    #car-images img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #container-socialmidia {
+        padding: 20px;
+    }
+
+    .container-socialmidia-icons {
+        gap: 20px;
+    }
+
+    .container-socialmidia-icons a {
+        font-size: 40px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    #developed {
+        font-size: 16px;
+        padding: 10px;
+    }
 }

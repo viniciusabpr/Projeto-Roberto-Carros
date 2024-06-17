@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="Css/Criarconta.css"">
+    <title>Trabalho final</title>
+    <link rel="stylesheet" href="Css/Criarconta.css">
 </head>
+
 <body>
-    <div class=" sec" style="display: flex; position: relative;">
-    <div class="exit"><a href="index.html"><svg id="xcircle" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                <path
-                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
-            </svg></a></div>
-    <div id="sidebar">
-    </div>
+
+
+    <div class="sec" style="display: flex; position: relative;">
+        <!-- Container principal -->
+        <div class="exit">
+            <!-- Botão de saída/fechar -->
+            <a href="index.html">
+                <!-- Link para a página inicial -->
+                <svg id="xcircle" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <!-- Ícone SVG de círculo com X para fechar -->
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                </svg>
+            </a>
+        </div>
+
+        <div id="sidebar">
+            <!-- Sidebar, atualmente vazia -->
+        </div>
+
         <form action="backend/login" method="post">
-        <h1>Criar Conta</h1>
+            <!-- Formulário de criação de conta com método POST -->
+            <h1>Criar Conta</h1>
+            <!-- Título do formulário -->
             <input placeholder="Nome" type="text">
+            <!-- Campo de entrada para o nome do usuário -->
             <input placeholder="Email" type="text">
+            <!-- Campo de entrada para o email do usuário -->
             <input placeholder="Senha" type="password">
+            <!-- Campo de entrada para a senha do usuário -->
             <button id="create">Criar</button>
+            <!-- Botão para enviar o formulário -->
         </form>
     </div>
 </body>
