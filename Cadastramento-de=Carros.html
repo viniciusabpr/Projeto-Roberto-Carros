@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Carros</title>
     <link rel="stylesheet" href="./Css/CadastramentodeCarros.css">
 </head>
+
 <body>
     <header>
         <img class="logo" id="logo2" src="./img/logo (2).png" alt="logo">
@@ -72,7 +74,7 @@
             </div>
 
             <div id="container-register">
-            <button class="register" type="submit">Cadastrar</button>
+                <button class="register" type="submit">Cadastrar</button>
             </div>
         </form>
     </div>
@@ -80,7 +82,7 @@
     <script>
         function previewImage(event) {
             var reader = new FileReader();
-            reader.onload = function() {
+            reader.onload = function () {
                 var preview = document.getElementById('preview');
                 preview.src = reader.result;
                 preview.style.display = 'block';
@@ -89,4 +91,5 @@
         }
     </script>
 </body>
+
 </html>

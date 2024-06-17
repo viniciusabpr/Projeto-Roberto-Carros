@@ -4,10 +4,11 @@
     --color-white: #fff;
     --color-dark: #000000;
     --color-brown-soft: #735F4D;
-    --color-brown: #695746;
+    --color-brown: #614e3d;
     --color-yelloh-soft: #F1CE51;
-    --color-yelloh-soft2:#bda241;
+    --color-yelloh-dark: #bba146;
     --color-whitish-yellow: #EEE6C8;
+
 }
 
 * {
@@ -30,11 +31,11 @@ header {
     height: 35px;
 }
 
-#logo2{
+#logo2 {
     cursor: pointer;
     width: 120px;
     height: 50px;
-    
+
 }
 
 .links a {
@@ -111,8 +112,7 @@ header {
 }
 
 .filter button:hover {
-    background-color: var(--color-brown-soft);
-    color: var(--color-white);
+    background-color: var(--color-yelloh-dark);
 }
 
 .teste {
@@ -141,9 +141,15 @@ header {
 }
 
 .pesquisa-btn:hover {
-    background-color: var(--color-yelloh-soft2);
-    color: var(--color-white);
+    background-color: var(--color-yelloh-dark);
+
 }
+
+.buy-button button:hover {
+    background-color: var(--color-yelloh-dark);
+}
+
+
 .card {
     margin-bottom: 2px;
     border-radius: 10px;
@@ -151,7 +157,7 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    background-color: var(--color-white);   
+    background-color: var(--color-white);
 }
 
 
@@ -161,7 +167,7 @@ header {
     width: 260px;
     height: 165px;
     border: solid var(--color-dark);
-    border-radius: 10px;  
+    border-radius: 10px;
     padding-bottom: 10px;
 }
 
@@ -186,7 +192,7 @@ header {
     gap: 20px;
 }
 
-.buy-button span{
+.buy-button span {
     padding-top: 15px;
     font-size: 25px;
     font-family: "Lalezar";
@@ -213,10 +219,7 @@ header {
     padding: 5px;
 }
 
-.buy-button button:hover {
-    background-color: var( --color-yelloh-soft2);
-    color: var(--color-dark);
-}
+
 
 footer {
     background-color: #F1CE51;
@@ -230,13 +233,16 @@ footer {
     .sidebar {
         width: 200px;
     }
+
     .card img {
         width: 200px;
         height: 130px;
     }
+
     .links li {
         padding: 0 50px;
     }
+
     .button {
         width: 80px;
         height: 30px;
@@ -249,13 +255,16 @@ footer {
     .sidebar {
         width: 180px;
     }
+
     .card img {
         width: 180px;
         height: 120px;
     }
+
     .links li {
         padding: 0 40px;
     }
+
     .button {
         width: 70px;
         height: 28px;
@@ -269,28 +278,35 @@ footer {
         flex-direction: column;
         height: auto;
     }
+
     .links {
         margin-top: 10px;
     }
+
     .links li {
         padding: 0 20px;
     }
+
     .sidebar {
         width: 100%;
         height: auto;
     }
+
     .container {
         flex-direction: column;
         align-items: center;
     }
+
     .card {
         flex-direction: column;
         align-items: center;
     }
+
     .card img {
         width: 100%;
         height: auto;
     }
+
     .button {
         width: 60px;
         height: 26px;
@@ -303,10 +319,12 @@ footer {
     .links li {
         padding: 0 10px;
     }
+
     .card img {
         width: 100%;
         height: auto;
     }
+
     .button {
         width: 50px;
         height: 24px;

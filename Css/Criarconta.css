@@ -1,25 +1,24 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-:root{
+:root {
     --color-white: #fff;
-    --color-dark:  #000000;
-    --color-brown-soft:#735F4D;
-    --color-brown:#695746;
+    --color-dark: #000000;
+    --color-brown-soft: #735F4D;
+    --color-brown: #695746;
     --color-yelloh-soft: #F1CE51;
-    --color-whitish-yellow:#EEE6C8;
+    --color-whitish-yellow: #EEE6C8;
 }
 
 /*esse estilo sera aplicado em todo HTML */
-*{
+* {
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
 }
 
 
-body{
+body {
     background-color: var(--color-whitish-yellow);
     display: flex;
     align-items: center;
@@ -29,37 +28,38 @@ body{
 }
 
 
-.sec{
+.sec {
     background-color: #fff;
     border-radius: 0px 20px 20px 0px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
     width: 800px;
-    height: 55  0px;
+    height: 55 0px;
     max-width: 100%;
     min-height: 480px;
 }
 
-#xcircle{
+#xcircle {
     color: var(--color-dark);
 
 }
 
-.exit a{
+.exit a {
     position: absolute;
-    top: 5px; left: 5px;
+    top: 5px;
+    left: 5px;
     text-decoration: none;
 }
 
 
-#create{
+#create {
     margin-top: 20px;
     margin-left: 26px;
     border-style: solid;
-    background-color:  var(--color-yelloh-soft);
+    background-color: var(--color-yelloh-soft);
     height: 60px;
-    border-color: var(--color-white);       
+    border-color: var(--color-white);
     border-radius: 20px;
     color: var(--color-white);
     font-size: 26px;
@@ -69,11 +69,11 @@ body{
 
 }
 
-form{
-   display: flex;
-   padding: 50px  123px 20px 130px; 
-   flex-direction: column;
-   gap: 8px;
+form {
+    display: flex;
+    padding: 50px 123px 20px 130px;
+    flex-direction: column;
+    gap: 8px;
 }
 
 form h1 {
@@ -84,19 +84,19 @@ form h1 {
 
 }
 
-form input{
+form input {
     border-radius: 18px;
     border-color: var(--color-brown);
     height: 55px;
     font-size: 18px;
     padding-left: 15px;
-    font-family: "Lalezar"; 
-    
-}   
+    font-family: "Lalezar";
 
-#form input{
+}
+
+#form input {
     max-width: 60%;
-    margin: auto;  
+    margin: auto;
 }
 
 
@@ -107,32 +107,33 @@ form input{
     position: relative;
     overflow: hidden;
     width: 800px;
-    height: 55  0px;
+    height: 55 0px;
     max-width: 100%;
-    min-height: 480px;  
+    min-height: 480px;
 
 }
 
-#sidebar{
+#sidebar {
     display: flex;
     border-radius: 0px 10px 10px 0px;
-    background:var(--color-yelloh-soft); 
+    background: var(--color-yelloh-soft);
     height: 500px;
     width: 250px;
 
 }
 
 
-.horizontalbar{
+.horizontalbar {
     display: flex;
     justify-content: center;
     background-color: var(--color-yelloh-soft);
     height: 250px;
 }
 
-.horizontalbar a{ 
+.horizontalbar a {
     position: absolute;
-    top: 500px; left: 700px;
+    top: 500px;
+    left: 700px;
     text-decoration: none;
     font-family: "Lalezar";
     color: #000000;
@@ -143,26 +144,25 @@ form input{
 
 
 
-#enter{
+#enter {
     border-radius: 18px;
     border-style: solid;
     border-color: var(--color-white);
-    background-color:  var(--color-yelloh-soft);
+    background-color: var(--color-yelloh-soft);
     height: 60px;
     width: 200px;
     font-size: 26px;
     font-family: "Lalezar";
     color: var(--color-white);
     margin: auto;
-    
+
 }
 
-.password{
-    padding-right: 65px; 
-    text-align: center; 
-    text-decoration: none; 
-    color:black;
+.password {
+    padding-right: 65px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
     font-family: "Lalezar";
 
 }
-

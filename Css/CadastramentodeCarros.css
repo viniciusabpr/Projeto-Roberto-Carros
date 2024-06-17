@@ -102,14 +102,14 @@ header {
     box-sizing: border-box;
 }
 
-#container-register{
+#container-register {
     display: flex;
     justify-content: center;
 }
 
-.register{
+.register {
     padding: 5px 15px;
-    font-family: "Lalezar"; 
+    font-family: "Lalezar";
     background-color: var(--color-yelloh-soft);
     font-size: 20px;
     border-radius: 5px;
@@ -118,10 +118,14 @@ header {
 
 
 .preview-image img {
-    max-width: 100%; /* Define a largura máxima para que a imagem não ultrapasse o contêiner */
-    max-height: 200px; /* Define a altura máxima desejada */
+    max-width: 100%;
+    /* Define a largura máxima para que a imagem não ultrapasse o contêiner */
+    max-height: 200px;
+    /* Define a altura máxima desejada */
     border: 1px solid var(--color-dark);
     border-radius: 4px;
-    display: block; /* Para garantir que a imagem não tenha espaços em branco abaixo dela */
-    margin: auto; /* Centraliza a imagem horizontalmente */
+    display: block;
+    /* Para garantir que a imagem não tenha espaços em branco abaixo dela */
+    margin: auto;
+    /* Centraliza a imagem horizontalmente */
 }
